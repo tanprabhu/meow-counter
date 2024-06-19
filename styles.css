@@ -1,0 +1,94 @@
+/* styles.css */
+/* center the counter to the page */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  display: flex; /* create flexible layouts with elements that you can align and distribute vertically or horizontally. */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* card like appearance */
+.counter-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.counter-container h1 {
+  margin-bottom: 20px;
+  color: #202124;
+}
+
+#counter {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 60px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1669c1;
+}
+
+button:active {
+  background-color: #ccc;
+}
+
+@keyframes moveUp {
+  0% {
+      bottom: -100px; /* Start off screen */
+      transform: translateY(0);
+  }
+  50% {
+      bottom: 50%; /* Middle of the screen */
+      transform: translateY(-50%);
+  }
+  100% {
+      bottom: 100%; /* Exit at the top */
+      transform: translateY(-100%);
+  }
+}
+
+#meowing-cat{
+  position: fixed;
+  bottom: -200px; /* Start off screen */
+  left: 0;
+  width: 100px;
+  height: 200px;
+  transition: transform 0.5s ease-in-out, bottom 0.5s ease-in-out;
+  z-index: 3;
+}
+
+/* changes the scale to 1 (visible) and adds a smooth transition. */
+#meowing-cat.show {
+  visibility: visible;
+  animation: moveUp 3s forwards;
+
+}
+
+body.change-background{
+  background-color: lightblue;
+}
+
