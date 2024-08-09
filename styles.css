@@ -6,7 +6,7 @@ body {
   display: flex; /* create flexible layouts with elements that you can align and distribute vertically or horizontally. */
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100vh; /*100% of viewport height*/
   margin: 0;
   color: #333;
 }
