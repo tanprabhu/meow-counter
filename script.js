@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       //change bg color
       body.classList.add('change-background');
 
-      // Hide the GIF & changes bg colour after a delay of 5 seconds
+      // Hide the GIF & changes bg colour after a delay of 2.5 seconds
       //show and change background are classes
       setTimeout(() => {
           popOutGif.classList.remove('show');
