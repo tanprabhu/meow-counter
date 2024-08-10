@@ -15,19 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
   incrementButton.addEventListener('click', function() {
       counter++;
       counterElement.textContent = counter;
-      //play audio when increment button is clicked
+      //to play audio when increment button is clicked
       
         audio.play();
         body.backgroundColor="lightblue";
       
-      // Show the pop-out GIF
+      // Show the GIF
       popOutGif.classList.add('show');
 
       //change bg color
       body.classList.add('change-background');
 
       // Hide the GIF & changes bg colour after a delay of 2.5 seconds
-      //show and change background are classes
       setTimeout(() => {
           popOutGif.classList.remove('show');
           body.classList.remove('change-background');
